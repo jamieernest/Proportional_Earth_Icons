@@ -62,7 +62,7 @@ When you open the file everything may seem intimidating, but don't worry, it's j
     }
 </script>
 <script async
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVM8Cn9pyJUdiep04ZslVehVBVP98Sf1w&callback=initMap">
 </script>
 ### Markdown
 
