@@ -13,7 +13,7 @@ When you open the file everything may seem intimidating, but don't worry, it's j
 2. Find the scale of all results, referring to the average. For example, if the average of all results is 2 units, the scale for 1 units would be 0.5, and the scale for 4 units would be 2.
 3. Open the template file.
 4. Change the name and description (line 4 - 5) to what you want.
-5. In the template, there are 15 sites. If there are too many sites, delete the extra blocks (example below). If you need more sites, make a new line after line 313 and paste this in:<br>
+5. In the template, there are 15 sites. If there are too many sites, delete the extra blocks (example below). If you need more sites, make a new line after line 313 and paste this in (repeat as many times as you need):<br>
 ```xml
     <Placemark>
         <name>Site 1 (14.61cm)</name>
@@ -36,35 +36,24 @@ When you open the file everything may seem intimidating, but don't worry, it's j
         </Point>
     </Placemark>
 ```
+6. Scroll down to the first block. You will see different attributes, such as name, longitude, latitute etc... The only attributes we care about are name, longitude, latitude, scale, and coordinates.
+7. Change the name of the block to whatever you like. This name will show up next to the circles in the map.
+8. Change the scale of the block to the scale of the first result, in relation to the average. You should have this calculated in Step 2.
+9. Change the coordinates attributes to the coordinates for the first point, in the format of `longitude,latitude,altitude (should be 0)`
+10. Change the longitude, latitude and altitude according to the coordinates you have.
+11. Repeat Steps 6-10 for every result.
 
-### Markdown
+## Result:
+<img src="https://github.com/jamieernest/Proportional_Earth_Icons/blob/gh-pages/result.png?raw=true">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Support or Contact:
 
-```markdown
-Syntax highlighted code block
+Having trouble? Please make an issue on the [repo](https://github.com/jamieernest/Proportional_Earth_Icons) and I will help you ASAP :)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jamieernest/Proportional_Earth_Icons/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Credits:
+1. [Microsoft](https://www.microsoft.com/) for [Visual Studio Code](https://code.visualstudio.com/) (I still dislike you Microsoft.)
+2. [Google])(https://google.com/) for [Google Earth Pro](https://www.google.com/earth/versions/#download-pro) and [Google Maps](https://maps.google.com/).
+3. [jumpinjackie (Jackie Ng)](https://github.com/jumpinjackie) for the VSCode Map preview extension.
+4. [Template](http://thematicmapping.googlepages.com/population_2005_icons.kmz) I referenced to, and also the [website](https://blog.mastermaps.com/2008/04/making-proportional-symbols-in-kml.html) (this is for population data).
+5. Ms Vardy and Set 4GGA of 2020-2021, especially Edward and Edo. Without you all, I would not have the motivation to do this.
+6. You for reading this :)
