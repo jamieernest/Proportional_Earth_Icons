@@ -1,5 +1,5 @@
 # Welcome to the guide to make proportional icons on Google Earth!
-In this guide I will cover how to make proportional icons in a KML icon in Google Earth. This is useful in multiple ways, such as visualizing bedload size in multiple locations (my use case), population data (check Credits, example of that is used here), and earthquake magnitude data.
+In this guide I will cover how to make proportional icons in a KML icon in Google Earth. This is useful in multiple ways, such as visualizing bedload size in multiple locations (my use case), population data (check Credits, example of that is listed there), and earthquake magnitude data, as a few examples.
 
 ## Prerequisites: 
 1. Download the template [here](https://github.com/jamieernest/Proportional_Earth_Icons/releases/download/1.0/water_of_leith_bedload_size_2021_4GGA.kml)
@@ -52,7 +52,7 @@ Having trouble? Please make an issue on the [repo](https://github.com/jamieernes
 
 ## Credits:
 1. [Microsoft](https://www.microsoft.com/) for [Visual Studio Code](https://code.visualstudio.com/) (I still dislike you Microsoft.)
-2. [Google])(https://google.com/) for [Google Earth Pro](https://www.google.com/earth/versions/#download-pro) and [Google Maps](https://maps.google.com/).
+2. [Google](https://google.com/) for [Google Earth Pro](https://www.google.com/earth/versions/#download-pro) and [Google Maps](https://maps.google.com/).
 3. [jumpinjackie (Jackie Ng)](https://github.com/jumpinjackie) for the VSCode Map preview extension.
 4. [Template](http://thematicmapping.googlepages.com/population_2005_icons.kmz) I referenced to, and also the [website](https://blog.mastermaps.com/2008/04/making-proportional-symbols-in-kml.html) (this is for population data).
 5. Ms Vardy and Set 4GGA of 2020-2021, especially Edward and Edo. Without you all, I would not have the motivation to do this.
