@@ -10,60 +10,31 @@ In this guide I will cover how to make proportional icons in a KML icon in Googl
 ## Steps:
 When you open the file everything may seem intimidating, but don't worry, it's just copy and paste :)<br>
 1. Find the average of all results.
-2. Find the scale of all results, referring to the average. For example, if the average of all results is 2cm, the scale for 1cm would be 0.5, and the scale for 4 would be 2.
-3. 
-<meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
-<meta charset="utf-8">
-<title>KML Click Capture Sample</title>
-<style>
-    html, body {
-    height: 370px;
-    padding: 0;
-    margin: 0;
-    }
-    #map {
-    height: 360px;
-    width: 300px;
-    overflow: hidden;
-    float: left;
-    border: thin solid #333;
-    }
-    #capture {
-    height: 360px;
-    width: 480px;
-    overflow: hidden;
-    float: left;
-    background-color: #ECECFB;
-    border: thin solid #333;
-    border-left: none;
-    }
-</style>
-<div id="map"></div>
-<div id="capture"></div>
-<script>
-    var map;
-    var src = 'https://github.com/jamieernest/Proportional_Earth_Icons/blob/master/water_of_leith_bedload_size_2021_4GGA.kml';
-    function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: new google.maps.LatLng(-3.254202, 55.9198388),
-        zoom: 2,
-        mapTypeId: 'terrain'
-    });
-    var kmlLayer = new google.maps.KmlLayer(src, {
-        suppressInfoWindows: true,
-        preserveViewport: false,
-        map: map
-    });
-    kmlLayer.addListener('click', function(event) {
-        var content = event.featureData.infoWindowHtml;
-        var testimonial = document.getElementById('capture');
-        testimonial.innerHTML = content;
-    });
-    }
-</script>
-<script async
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVM8Cn9pyJUdiep04ZslVehVBVP98Sf1w&callback=initMap">
-</script>
+2. Find the scale of all results, referring to the average. For example, if the average of all results is 2 units, the scale for 1 units would be 0.5, and the scale for 4 units would be 2.
+3. Open the template file.
+4. Change the name and description (line 4 - 5) to what you want.
+5. In the template, there are 15 sites. If there are too many sites, delete the extra blocks (example below). If you need more sites, make a new line after line 313 and paste this in:<br>```<Placemark>
+		<name>Site 1 (14.61cm)</name>
+		<LookAt>
+			<longitude>-3.4638007</longitude>
+			<latitude>55.8197572</latitude>
+			<altitude>0</altitude>
+			<range>3200000</range>
+			<tilt>0</tilt>
+			<heading>0</heading>
+		</LookAt>
+		<styleUrl>#defaultStyles</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.35</scale>
+			</IconStyle>
+		</Style>
+		<Point>
+			<coordinates>-3.4638007,55.8197572,0</coordinates>
+		</Point>
+	</Placemark>
+    ```
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
