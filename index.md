@@ -13,7 +13,7 @@ When you open the file everything may seem intimidating, but don't worry, it's j
 2. Find the scale of all results, referring to the average. For example, if the average of all results is 2 units, the scale for 1 units would be 0.5, and the scale for 4 units would be 2.
 3. Open the template file.
 4. Change the name and description (line 4 - 5) to what you want.
-5. In the template, there are 15 sites. If there are too many sites, delete the extra blocks (example below). If you need more sites, make a new line after line 313 and paste this in:<br>```<Placemark>
+5. In the template, there are 15 sites. If there are too many sites, delete the extra blocks (example below). If you need more sites, make a new line after line 313 and paste this in:<br>```markdown<Placemark>
 		<name>Site 1 (14.61cm)</name>
 		<LookAt>
 			<longitude>-3.4638007</longitude>
